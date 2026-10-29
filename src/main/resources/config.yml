@@ -1,0 +1,16 @@
+# Configuración de AldeanoNetherite
+
+aldeano:
+  # Nombre que se ve sobre el aldeano (acepta colores con &)
+  nombre: "&6&lComerciante de Netherite"
+
+tradeo:
+  # Cantidad de lingotes de netherite que pide cada oferta (se elige al azar entre min y max)
+  lingotes-min: 2
+  lingotes-max: 8
+  encantamiento:
+    # Cuántos encantamientos recibe la pieza del trato mejorado (el de la plantilla)
+    cantidad: 2
+    # Nivel de cada encantamiento (al azar entre min y max)
+    nivel-min: 4
+    nivel-max: 6

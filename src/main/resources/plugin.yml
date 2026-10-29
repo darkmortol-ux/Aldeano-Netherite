@@ -1,0 +1,20 @@
+name: AldeanoNetherite
+version: ${project.version}
+main: com.miplugin.aldeanonetherite.AldeanoNetheritePlugin
+api-version: '1.21'
+author: German
+description: Aldeano comerciante con misiones para intercambiar equipo de netherite.
+
+commands:
+  aldeano:
+    description: Gestiona el aldeano comerciante de netherite.
+    usage: /<command> <set|remove|reset|mision|abandonar|reload>
+    aliases: [aldeanonetherite]
+
+permissions:
+  aldeanonetherite.admin:
+    description: Permite colocar, quitar y administrar el aldeano.
+    default: op
+  aldeanonetherite.use:
+    description: Permite usar el aldeano y los comandos de jugador.
+    default: true
