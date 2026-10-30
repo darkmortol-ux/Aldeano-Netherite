@@ -142,7 +142,7 @@ public final class TradeMenu implements InventoryHolder {
         PlayerData data = plugin.data().get(player.getUniqueId());
         Offer offer = data.offer;
         if (data.state != PlayerData.State.COMPLETED || offer == null) {
-            Bukkit.getScheduler().runTask(plugin, player::closeInventory);
+            Bukkit.getScheduler().runTask(plugin, () -> player.closeInventory());
             return;
         }
 
@@ -218,7 +218,7 @@ public final class TradeMenu implements InventoryHolder {
                 ? "&d¡Intercambio mejorado realizado! Disfruta tu equipo."
                 : "&a¡Intercambio realizado! Vuelve conmigo para otra misión.");
         player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1f, 1f);
-        Bukkit.getScheduler().runTask(plugin, player::closeInventory);
+        Bukkit.getScheduler().runTask(plugin, () -> player.closeInventory());
     }
 
     // ---------------------------------------------------------------- utilidades de inventario
